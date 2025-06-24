@@ -2,10 +2,10 @@ name: Deploy to staging
 on:
   push:
     branches: [ main ]
-    
+
 jobs:
   redeploy_everything:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     name: Deploying everything to the staging cluster
     steps:
       - run : |
